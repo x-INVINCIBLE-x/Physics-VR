@@ -5,13 +5,14 @@ using UnityEngine.InputSystem;
 
 public class ContinousMovementPhysics : MonoBehaviour
 {
+    private PhysicsRig physicsRig;
+
     public InputActionProperty moveInputSource;
     public InputActionProperty turnInputSource;
     public InputActionProperty jumpInputSource;
 
     public LayerMask groundLayer;
     public Rigidbody rb;
-
 
     public Transform directionSource;
     public Transform turnSource;
@@ -23,12 +24,20 @@ public class ContinousMovementPhysics : MonoBehaviour
     [Space]
     private bool isGrounded;
     public bool onlyMoveWhenGrounded = false;
+    public bool jumpWithHand = false;
 
     public float speed = 1;
     public float turnSpeed = 60f;
 
     private float jumpVelocity;
     public float jumpHeight = 1.5f;
+    public float minHandSpeedForJump;
+    public float maxHandSpeedForJump;
+
+    private void Awake()
+    {
+        physicsRig = GetComponent<PhysicsRig>();
+    }
 
     private void Update()
     {
@@ -37,10 +46,27 @@ public class ContinousMovementPhysics : MonoBehaviour
 
         bool jump = jumpInputSource.action.WasPerformedThisFrame();
 
-        if (isGrounded && jump)
+        if (jumpWithHand)
         {
-            jumpVelocity = Mathf.Sqrt(1 * -Physics.gravity.y * jumpHeight);
-            rb.velocity = Vector3.up * jumpVelocity;
+            bool currentJumpInput = jumpInputSource.action.IsPressed();
+
+            float handSpeed = ((physicsRig.leftHandJointRB.velocity - rb.velocity).magnitude 
+                                + (physicsRig.rightHandJointRB.velocity - rb.velocity).magnitude) / 2;
+
+            if (currentJumpInput) Debug.Log("HandSpeed" + handSpeed); // For Debugging Only
+            
+            if (currentJumpInput && isGrounded && handSpeed > minHandSpeedForJump)
+            {
+                rb.velocity = Vector3.up * Mathf.Clamp(handSpeed, minHandSpeedForJump, maxHandSpeedForJump);
+            }
+        }
+        else
+        {
+            if (isGrounded && jump)
+            {
+                jumpVelocity = Mathf.Sqrt(1 * -Physics.gravity.y * jumpHeight);
+                rb.velocity = Vector3.up * jumpVelocity;
+            }
         }
     }
 
