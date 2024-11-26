@@ -7,12 +7,11 @@ public class ContinousMovementPhysics : MonoBehaviour
 {
     public InputActionProperty moveInputSource;
     public InputActionProperty turnInputSource;
+    public InputActionProperty jumpInputSource;
 
     public LayerMask groundLayer;
     public Rigidbody rb;
 
-    public float speed = 1;
-    public float turnSpeed = 60f;
 
     public Transform directionSource;
     public Transform turnSource;
@@ -21,15 +20,35 @@ public class ContinousMovementPhysics : MonoBehaviour
     private Vector2 inputMoveAxis;
     private float inputTurnAxis;
 
+    [Space]
+    private bool isGrounded;
+    public bool onlyMoveWhenGrounded = false;
+
+    public float speed = 1;
+    public float turnSpeed = 60f;
+
+    private float jumpVelocity;
+    public float jumpHeight = 1.5f;
+
     private void Update()
     {
         inputMoveAxis = moveInputSource.action.ReadValue<Vector2>();
         inputTurnAxis = turnInputSource.action.ReadValue<Vector2>().x;
+
+        bool jump = jumpInputSource.action.WasPerformedThisFrame();
+
+        if (isGrounded && jump)
+        {
+            jumpVelocity = Mathf.Sqrt(1 * -Physics.gravity.y * jumpHeight);
+            rb.velocity = Vector3.up * jumpVelocity;
+        }
     }
 
     private void FixedUpdate()
     {
-        if(!IsGrounded())
+        isGrounded = IsGrounded();
+
+        if(!onlyMoveWhenGrounded || (onlyMoveWhenGrounded && isGrounded))
             return;
 
         Quaternion raw = Quaternion.Euler(0, directionSource.eulerAngles.y, 0);
