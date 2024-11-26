@@ -669,8 +669,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.08379616, y: 0.20000005, z: 0.117386326}
-  m_Center: {x: -0.02, y: 1.1, z: 0}
+  m_Size: {x: 0.0436183, y: 0.075469255, z: 0.16133085}
+  m_Center: {x: 0.0075333454, y: 0, z: 0}
 --- !u!1 &203416551
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,7 +688,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!153 &203416552
 ConfigurableJoint:
   m_ObjectHideFlags: 0
@@ -827,7 +827,7 @@ Transform:
   m_GameObject: {fileID: 203416551}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.03, y: 1.1, z: -0.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1213,15 +1213,32 @@ MonoBehaviour:
       m_SingletonActionBindings: []
       m_Flags: 0
     m_Reference: {fileID: -6493913391331992944, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  jumpInputSource:
+    m_UseReference: 1
+    m_Action:
+      m_Name: Jump Input Source
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: d6d850a6-9c33-4582-85a8-8212a9ca8cdf
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+      m_Flags: 0
+    m_Reference: {fileID: 4470648411321299195, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   groundLayer:
     serializedVersion: 2
     m_Bits: 128
   rb: {fileID: 31850809}
-  speed: 1
-  turnSpeed: 60
   directionSource: {fileID: 2087920268}
   turnSource: {fileID: 2087920268}
   bodyCollider: {fileID: 92223185}
+  onlyMoveWhenGrounded: 0
+  jumpWithHand: 0
+  speed: 1
+  turnSpeed: 60
+  jumpHeight: 1.5
+  minHandSpeedForJump: 0
+  maxHandSpeedForJump: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1721,7 +1738,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!153 &1292026723
 ConfigurableJoint:
   m_ObjectHideFlags: 0
@@ -1860,7 +1877,7 @@ Transform:
   m_GameObject: {fileID: 1292026722}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.03, y: 1.1, z: -0.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2651,10 +2668,10 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.08379616, y: 0.20000005, z: 0.117386326}
-  m_Center: {x: 0.02, y: 1.1, z: 0}
+  m_Size: {x: 0.04738497, y: 0.075469255, z: 0.16133085}
+  m_Center: {x: -0.00565001, y: 0, z: 0}
 --- !u!1 &2087920267
 GameObject:
   m_ObjectHideFlags: 0
