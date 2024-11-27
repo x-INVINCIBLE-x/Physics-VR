@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 71
+  controlID: 131
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 27
+  controlID: 18
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -225,7 +225,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 72
+  controlID: 103
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -699,9 +699,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.10640742, y: 1.0737655, z: -0.2065794}
+    m_Target: {x: 0.36889789, y: 0.17734501, z: -0.33550608}
     speed: 2
-    m_Value: {x: -0.10640742, y: 1.0737655, z: -0.2065794}
+    m_Value: {x: 0.36889789, y: 0.17734501, z: -0.33550608}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -747,17 +747,17 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0, y: -0.7071068, z: -0, w: 0.7071068}
+    m_Target: {x: 0.03485635, y: -0.9644901, z: 0.16595747, w: 0.20256448}
     speed: 2
-    m_Value: {x: 0.0000001019279, y: -0.7071067, z: 0, w: 0.70710677}
+    m_Value: {x: 0.03421713, y: -0.9651574, z: 0.16488007, w: 0.20028733}
   m_Size:
-    m_Target: 0.25927275
+    m_Target: 0.5218764
     speed: 2
-    m_Value: 0.25927275
+    m_Value: 0.5464674
   m_Ortho:
-    m_Target: 1
+    m_Target: 0
     speed: 2
-    m_Value: 1
+    m_Value: 0
   m_CameraSettings:
     m_Speed: 0.069699995
     m_SpeedNormalized: 0.03
@@ -998,7 +998,7 @@ MonoBehaviour:
   m_UseMipMap: 0
   m_VSyncEnabled: 0
   m_Gizmos: 0
-  m_Stats: 0
+  m_Stats: 1
   m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
@@ -1069,9 +1069,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 434.4
-    width: 823.8
-    height: 437
+    y: 451.2
+    width: 821.4
+    height: 420.19998
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1084,7 +1084,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 29706
+  m_LastSelectedObjectID: 39262
 --- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1122,20 +1122,20 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: f673000034740000
-      m_LastClickedID: 29748
-      m_ExpandedIDs: 28fbfffff67300000a74000034740000
+      m_SelectedIDs: 5e990000
+      m_LastClickedID: 39262
+      m_ExpandedIDs: 06ceffffd6ceffffdcd4ffff5ed5ffff84d7ffff28fbffffde9400000c95000056950000fc98000030990000569900005e99000098990000a8990000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: DO NOT TOUCH - Left Hand Physics
-        m_OriginalName: DO NOT TOUCH - Left Hand Physics
+        m_Name: Body Collider
+        m_OriginalName: Body Collider
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 29686
+        m_UserData: 39228
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -1193,7 +1193,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Samples/XR Interaction Toolkit/2.5.4/Starter Assets
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1209,7 +1209,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: b6700000
     m_LastClickedID: 28854
-    m_ExpandedIDs: 0000000048760000427700004477000046770000487700004a7700004c7700004e77000050770000527700005477000056770000587700005a770000
+    m_ExpandedIDs: 000000001e750000787900007a7900007c7900007e79000080790000827900008479000086790000887900008a7900008c7900008e7900009079000092790000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1234,10 +1234,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 38.600006}
+    scrollPos: {x: 0, y: 164}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff0000000048760000427700004477000046770000487700004a7700004c7700004e77000050770000527700005477000056770000587700005a77000058790000
+    m_ExpandedIDs: ffffffff00000000787900007a7900007c7900007e790000807900008279000084790000887900008a7900008c7900008e79000090790000927900001c7c0000269c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 

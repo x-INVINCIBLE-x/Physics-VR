@@ -25,11 +25,11 @@ public class PhysicsRig : MonoBehaviour
         bodyColliser.height = Mathf.Clamp(playerHead.localPosition.y, minHeight, maxHeight);
         bodyColliser.center = new Vector3 (playerHead.localPosition.x, bodyColliser.height/2, playerHead.localPosition.z);
 
-        leftHandJoint.targetPosition = leftController.localPosition;
-        leftHandJoint.targetRotation = leftController.localRotation;
+        //leftHandJoint.targetPosition = leftController.localPosition;
+        //leftHandJoint.targetRotation = leftController.localRotation;
 
-        rightHandJoint.targetPosition = rightController.localPosition;
-        rightHandJoint.targetRotation = rightController.localRotation;
+        //rightHandJoint.targetPosition = rightController.localPosition;
+        //rightHandJoint.targetRotation = rightController.localRotation;
 
         headJoint.targetPosition = playerHead.localPosition;
     }

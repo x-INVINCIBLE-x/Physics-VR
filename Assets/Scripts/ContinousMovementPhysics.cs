@@ -57,8 +57,8 @@ public class ContinousMovementPhysics : MonoBehaviour
 
     private void UpdatePositionAndRotation()
     {
-        if (!onlyMoveWhenGrounded || (onlyMoveWhenGrounded && isGrounded))
-            return;
+        //if (!onlyMoveWhenGrounded || (onlyMoveWhenGrounded && isGrounded))
+        //    return;
 
         Quaternion raw = Quaternion.Euler(0, directionSource.eulerAngles.y, 0);
         Vector3 direction = raw * new Vector3(inputMoveAxis.x, 0, inputMoveAxis.y);
@@ -90,7 +90,10 @@ public class ContinousMovementPhysics : MonoBehaviour
 
             if (currentJumpInput && isGrounded && handSpeed > minHandSpeedForJump)
             {
-                rb.velocity = Vector3.up * Mathf.Clamp(handSpeed, minHandSpeedForJump, maxHandSpeedForJump);
+                Debug.Log("enter");
+                //rb.velocity = Vector3.up * //Mathf.Clamp(handSpeed, minHandSpeedForJump, maxHandSpeedForJump);
+                jumpVelocity = Mathf.Sqrt(1 * -Physics.gravity.y * jumpHeight);
+                rb.velocity = Vector3.up * jumpVelocity;
             }
         }
         else
