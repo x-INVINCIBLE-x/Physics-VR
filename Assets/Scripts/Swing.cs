@@ -25,11 +25,13 @@ public class Swing : MonoBehaviour
 
     private void Update()
     {
-        if (swingAction.action.WasPerformedThisFrame())
+        GetSwingPoint();
+
+        if (swingAction.action.WasPressedThisFrame())
         {
             StartSwing();
         }
-        else
+        else if (swingAction.action.WasReleasedThisFrame())
         {
             StopSwing();
         }
@@ -41,7 +43,7 @@ public class Swing : MonoBehaviour
     private void StartSwing()
     {
         if (!hasHit) return;
-
+        Debug.Log("enter");
         joint = playerRb.gameObject.AddComponent<SpringJoint>();
         joint.autoConfigureConnectedAnchor = false;
         joint.connectedAnchor = swingPoint;
@@ -56,6 +58,7 @@ public class Swing : MonoBehaviour
 
     private void StopSwing()
     {
+        Debug.Log("Destroy");
         Destroy(joint);
     }
 
@@ -64,15 +67,15 @@ public class Swing : MonoBehaviour
         if (!joint) return;
 
         if (!pullAction.action.IsPressed()) return;
-
-        Vector3 direction = (startSwingPoint.position - swingPoint).normalized;
+        Debug.Log("pull");
+        Vector3 direction = (swingPoint - startSwingPoint.position).normalized;
         playerRb.AddForce(direction * pullingStrngth * Time.deltaTime);
 
         float distance = Vector3.Distance(playerRb.position, swingPoint);
         joint.maxDistance = distance;
     }
 
-    private void GeSwingPoint()
+    private void GetSwingPoint()
     {
         if (joint)
         {
@@ -100,6 +103,7 @@ public class Swing : MonoBehaviour
     {
         if (joint)
         {
+        Debug.Log("rope");
             lineRenderer.enabled = true;
             lineRenderer.positionCount = 2;
             lineRenderer.SetPosition(0, startSwingPoint.position);
