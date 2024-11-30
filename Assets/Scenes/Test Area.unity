@@ -1024,42 +1024,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 776237116}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &807878037
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 807878038}
-  m_Layer: 6
-  m_Name: Swing Point
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &807878038
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 807878037}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.022074405, y: 0.13049439, z: -0.002906113, w: 0.991199}
-  m_LocalPosition: {x: 0.0306, y: 0.0473, z: -0.001}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1001767933}
-  m_LocalEulerAnglesHint: {x: 2.552, y: 15, z: 0}
---- !u!4 &870018868 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8347856060492136849, guid: 96cbee2ea9ad6ac4f82b32057fdb0ef4, type: 3}
-  m_PrefabInstance: {fileID: 1130056420}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &976886560
 GameObject:
   m_ObjectHideFlags: 0
@@ -1165,11 +1129,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 976886560}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1001767933 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2840697947647418122, guid: 96cbee2ea9ad6ac4f82b32057fdb0ef4, type: 3}
-  m_PrefabInstance: {fileID: 1130056420}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1034509666
 GameObject:
   m_ObjectHideFlags: 0
@@ -1358,18 +1317,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 605464733143511632, guid: 96cbee2ea9ad6ac4f82b32057fdb0ef4, type: 3}
-      propertyPath: startSwingPoint
-      value: 
-      objectReference: {fileID: 870018868}
-    - target: {fileID: 3953804101796734070, guid: 96cbee2ea9ad6ac4f82b32057fdb0ef4, type: 3}
-      propertyPath: startSwingPoint
-      value: 
-      objectReference: {fileID: 1517290137}
-    - target: {fileID: 4621933902394754584, guid: 96cbee2ea9ad6ac4f82b32057fdb0ef4, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4930621517716840183, guid: 96cbee2ea9ad6ac4f82b32057fdb0ef4, type: 3}
       propertyPath: m_Name
       value: Physics Rig
@@ -1415,12 +1362,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 3305359971101494020, guid: 96cbee2ea9ad6ac4f82b32057fdb0ef4, type: 3}
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 2840697947647418122, guid: 96cbee2ea9ad6ac4f82b32057fdb0ef4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 807878038}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96cbee2ea9ad6ac4f82b32057fdb0ef4, type: 3}
 --- !u!1 &1271483246
@@ -1948,11 +1891,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1428062659}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &1517290137 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6480775708814630065, guid: 96cbee2ea9ad6ac4f82b32057fdb0ef4, type: 3}
-  m_PrefabInstance: {fileID: 1130056420}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1556973565
 GameObject:
   m_ObjectHideFlags: 0
