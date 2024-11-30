@@ -5,7 +5,8 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public enum TargetTag
 {
-    EnergyKey
+    EnergyKey,
+    Weapon
 }
 
 public class XRSocketTagInteractor : XRSocketInteractor
