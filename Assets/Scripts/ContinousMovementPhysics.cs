@@ -29,8 +29,8 @@ public class ContinousMovementPhysics : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(!IsGrounded())
-            return;
+        //if(!IsGrounded())
+        //    return;
 
         Quaternion raw = Quaternion.Euler(0, directionSource.eulerAngles.y, 0);
         Vector3 direction = raw * new Vector3(inputMoveAxis.x, 0, inputMoveAxis.y);
