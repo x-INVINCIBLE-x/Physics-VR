@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 51696115}
   - component: {fileID: 51696114}
   - component: {fileID: 51696113}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -283,64 +283,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5748377660842850286, guid: 96cbee2ea9ad6ac4f82b32057fdb0ef4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 366674829}
-    - targetCorrespondingSourceObject: {fileID: 5748377660842850286, guid: 96cbee2ea9ad6ac4f82b32057fdb0ef4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 366674828}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96cbee2ea9ad6ac4f82b32057fdb0ef4, type: 3}
---- !u!1 &366674826 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5748377660842850286, guid: 96cbee2ea9ad6ac4f82b32057fdb0ef4, type: 3}
-  m_PrefabInstance: {fileID: 366674825}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &366674827 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2400119771484477623, guid: 96cbee2ea9ad6ac4f82b32057fdb0ef4, type: 3}
-  m_PrefabInstance: {fileID: 366674825}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 366674826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0cb9aa70a22847b5925ee5f067c10a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &366674828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 366674826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 496880615cd240be960d436c1c8ae570, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_System: {fileID: 366674829}
-  m_ClimbSettings:
-    m_UseConstant: 1
-    m_ConstantValue:
-      m_AllowFreeXMovement: 1
-      m_AllowFreeYMovement: 1
-      m_AllowFreeZMovement: 1
-    m_Variable: {fileID: 0}
---- !u!114 &366674829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 366674826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03a5df2202a8b96488c744be3bd0c33e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Timeout: 10
-  m_XROrigin: {fileID: 366674827}
 --- !u!1001 &833995140
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -359,7 +303,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4223635557334411916, guid: b3830b3b2f190ee46a9c88433e985221, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.24
+      value: 0.58
       objectReference: {fileID: 0}
     - target: {fileID: 4223635557334411916, guid: b3830b3b2f190ee46a9c88433e985221, type: 3}
       propertyPath: m_LocalPosition.z
@@ -623,7 +567,7 @@ Transform:
   m_GameObject: {fileID: 1466897135}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.61, y: 4.64, z: 1.94}
+  m_LocalPosition: {x: 27.5, y: 14.6, z: 1.94}
   m_LocalScale: {x: 20, y: 1, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -641,7 +585,7 @@ GameObject:
   - component: {fileID: 1811149360}
   - component: {fileID: 1811149359}
   - component: {fileID: 1811149358}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
