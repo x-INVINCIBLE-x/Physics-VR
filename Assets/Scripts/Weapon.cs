@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
 [RequireComponent(typeof(Rigidbody))]
-[RequireComponent (typeof(XRGrabInteractable))]
+[RequireComponent(typeof(XRGrabInteractable))]
 public class Weapon : MonoBehaviour
 {
     [SerializeField] protected float shootingForce;
@@ -16,7 +16,6 @@ public class Weapon : MonoBehaviour
     private Rigidbody rigidBody;
     private XRGrabInteractable interactableWeapon;
 
-
     protected virtual void Awake()
     {
         interactableWeapon = GetComponent<XRGrabInteractable>();
@@ -26,32 +25,31 @@ public class Weapon : MonoBehaviour
 
     private void SetupInteractableWeaponEvents()
     {
-        interactableWeapon.onSelectEntered.AddListener(PickUpWeapon);
-        interactableWeapon.onSelectExited.AddListener(DropWeapon);
-        interactableWeapon.onActivate.AddListener(StartShooting);
-        interactableWeapon.onDeactivate.AddListener(StopShooting);
+        interactableWeapon.selectEntered.AddListener(PickUpWeapon);
+        interactableWeapon.selectExited.AddListener(DropWeapon);
+        interactableWeapon.activated.AddListener(StartShooting);
+        interactableWeapon.deactivated.AddListener(StopShooting);
     }
 
-
-    private void PickUpWeapon(XRBaseInteractor interactor)
+    private void PickUpWeapon(SelectEnterEventArgs args)
     {
-        interactor.GetComponent<MeshHidder>().Hide();
+        args.interactorObject.transform.GetComponent<MeshHidder>()?.Hide();
     }
 
-    private void DropWeapon(XRBaseInteractor interactor)
+    private void DropWeapon(SelectExitEventArgs args)
     {
-        interactor.GetComponent<MeshHidder>().Show();
+        args.interactorObject.transform.GetComponent<MeshHidder>()?.Show();
     }
     
-    protected virtual void StartShooting(XRBaseInteractor interactor)
+    protected virtual void StartShooting(ActivateEventArgs args)
     {
-        throw new NotImplementedException();
-    }
-    protected virtual void StopShooting(XRBaseInteractor interactor)
-    {
-        throw new NotImplementedException();
+        
     }
 
+    protected virtual void StopShooting(DeactivateEventArgs args)
+    {
+        
+    }
 
     protected virtual void Shoot() 
     {
@@ -71,8 +69,5 @@ public class Weapon : MonoBehaviour
     public float GetDamage() 
     {
         return damage;
-    
     }
-
-
 }
