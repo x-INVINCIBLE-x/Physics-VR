@@ -1433,6 +1433,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 217523153162412109, guid: 96cbee2ea9ad6ac4f82b32057fdb0ef4, type: 3}
+      propertyPath: inventoryManager
+      value: 
+      objectReference: {fileID: 1807384872}
+    - target: {fileID: 614421758023318952, guid: 96cbee2ea9ad6ac4f82b32057fdb0ef4, type: 3}
+      propertyPath: inventoryManager
+      value: 
+      objectReference: {fileID: 1807384872}
+    - target: {fileID: 1728718149628996669, guid: 96cbee2ea9ad6ac4f82b32057fdb0ef4, type: 3}
+      propertyPath: inventoryManager
+      value: 
+      objectReference: {fileID: 1807384872}
     - target: {fileID: 4930621517716840183, guid: 96cbee2ea9ad6ac4f82b32057fdb0ef4, type: 3}
       propertyPath: m_Name
       value: Physics Rig
@@ -1477,6 +1489,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8552516961479887776, guid: 96cbee2ea9ad6ac4f82b32057fdb0ef4, type: 3}
+      propertyPath: inventoryManager
+      value: 
+      objectReference: {fileID: 1807384872}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2240,6 +2256,54 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1 &1807384871
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1807384873}
+  - component: {fileID: 1807384872}
+  m_Layer: 0
+  m_Name: InventoryManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1807384872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807384871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 563acf7899d1afb49a179c3d6b22a4b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slot1Weapon: {fileID: 0}
+  slot2Weapon: {fileID: 0}
+  slot3Weapon: {fileID: 0}
+  slot4Weapon: {fileID: 0}
+--- !u!4 &1807384873
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807384871}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.14299995, y: 1.2103, z: -0.83000004}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1878878761
 GameObject:
   m_ObjectHideFlags: 0
@@ -2876,8 +2940,8 @@ Transform:
   m_GameObject: {fileID: 3418300318560525049}
   serializedVersion: 2
   m_LocalRotation: {x: -0.6334462, y: 0.3142387, z: 0.3142387, w: 0.6334462}
-  m_LocalPosition: {x: 3.099, y: 0.885, z: -1.028}
-  m_LocalScale: {x: 0.01, y: 0.008393052, z: 0.01}
+  m_LocalPosition: {x: 3.099, y: 0.47, z: -1.028}
+  m_LocalScale: {x: 0.015, y: 0.015, z: 0.015}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -3045,6 +3109,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 8479299092104170415, guid: 1f64bbc448b23674fa4ee40587e342e7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8640560876064455818, guid: 1f64bbc448b23674fa4ee40587e342e7, type: 3}
       propertyPath: m_text
       value: Access Area
@@ -3072,3 +3140,4 @@ SceneRoots:
   - {fileID: 3837305676882040841}
   - {fileID: 1253758793687833921}
   - {fileID: 2610942830517403715}
+  - {fileID: 1807384873}
