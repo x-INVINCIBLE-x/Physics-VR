@@ -21,23 +21,24 @@ public class ContinousMovementPhysics : MonoBehaviour
     private Vector2 inputMoveAxis;
     private float inputTurnAxis;
 
+    //private void Update()
+    //{
+        
+    //}
+
     private void Update()
     {
+        //if(!IsGrounded())
+        //    return;
+
         inputMoveAxis = moveInputSource.action.ReadValue<Vector2>();
         inputTurnAxis = turnInputSource.action.ReadValue<Vector2>().x;
-    }
-
-    private void FixedUpdate()
-    {
-        if(!IsGrounded())
-            return;
-
         Quaternion raw = Quaternion.Euler(0, directionSource.eulerAngles.y, 0);
         Vector3 direction = raw * new Vector3(inputMoveAxis.x, 0, inputMoveAxis.y);
 
-        Vector3 targetMovePosition =  (rb.position + direction * Time.fixedDeltaTime * speed);
+        Vector3 targetMovePosition =  (rb.position + direction * Time.deltaTime * speed);
 
-        float angle = turnSpeed * Time.fixedDeltaTime * inputTurnAxis;
+        float angle = turnSpeed * Time.deltaTime * inputTurnAxis;
         Quaternion q = Quaternion.AngleAxis(angle, Vector3.up);
 
         rb.MoveRotation(rb.rotation * q);
