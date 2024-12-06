@@ -4,18 +4,9 @@ using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
-    public Dictionary<XRSocketTagInteractor, InventoryItem> socketItems;
-    public GameObject slot1Weapon;
-    public GameObject slot2Weapon;
-    public GameObject slot3Weapon;
-    public GameObject slot4Weapon;
+    public Dictionary<XRSocketTagInteractor, Weapons> socketItems = new();
 
-    private void Awake()
-    {
-        socketItems = new();
-    }
-
-    public void AddItemFromSocket(InventoryItem item, XRSocketTagInteractor socket)
+    public void AddItemFromSocket(Weapons item, XRSocketTagInteractor socket)
     {
         socketItems.Add(socket, item);
     }

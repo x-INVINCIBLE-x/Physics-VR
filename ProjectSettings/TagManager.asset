@@ -6,6 +6,7 @@ TagManager:
   tags:
   - EnergyKey
   - Weapon
+  - InventoryItem
   layers:
   - Default
   - TransparentFX

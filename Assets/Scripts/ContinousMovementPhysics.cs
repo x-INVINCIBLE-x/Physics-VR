@@ -68,7 +68,7 @@ public class ContinousMovementPhysics : MonoBehaviour
 
         Vector3 targetMovePosition = (rb.position + direction * Time.fixedDeltaTime * speed);
 
-        float angle = turnSpeed * Time.deltaTime * inputTurnAxis;
+        float angle = turnSpeed * Time.fixedDeltaTime * inputTurnAxis;
         Quaternion q = Quaternion.AngleAxis(angle, Vector3.up);
 
         rb.MoveRotation(rb.rotation * q);

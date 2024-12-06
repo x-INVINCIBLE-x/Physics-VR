@@ -2,8 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Weapons : MonoBehaviour
+public class Weapons : InventoryItem
 {
-    public InventoryItem inventoryItem;
-    public bool isInventoryItem = false;
 }
