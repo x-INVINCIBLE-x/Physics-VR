@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1706.6667
     height: 976
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Game
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -391,7 +391,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Player
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -399,16 +399,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Player
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Unity Projects\Game-Projects\Physics-VR
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 257}
-    m_SelectedIDs: 1a7c0000
-    m_LastClickedID: 31770
-    m_ExpandedIDs: 00000000d8790000da790000dc790000b87b0000167c000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 129}
+    m_SelectedIDs: e47c0000
+    m_LastClickedID: 31972
+    m_ExpandedIDs: 00000000d8790000da790000dc790000de790000b87b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -436,7 +436,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d8790000da790000dc790000
+    m_ExpandedIDs: 00000000d8790000da790000dc790000de790000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -576,20 +576,20 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 82c2ffff08d0fffffee0ffff10fbffff
+      m_SelectedIDs: 74d8ffff
+      m_LastClickedID: -10124
+      m_ExpandedIDs: 68d8ffff74d8ffff7cd8ffff10fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: cool_sword (1)
-        m_OriginalName: cool_sword (1)
+        m_Name: Player_Physics_Rig
+        m_OriginalName: Player_Physics_Rig
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -1266
+        m_UserData: -10116
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -1023,9 +1023,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 563.6293, y: 127.52587, z: 918.0767}
+    m_Target: {x: 562.8866, y: 127.89131, z: 919.7664}
     speed: 2
-    m_Value: {x: 563.6293, y: 127.52587, z: 918.0767}
+    m_Value: {x: 562.8866, y: 127.89131, z: 919.7664}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1071,13 +1071,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.36110482, y: 0.5792246, z: -0.31781435, w: 0.6581969}
+    m_Target: {x: 0.022686843, y: 0.9680789, z: -0.095176704, w: 0.23075758}
     speed: 2
-    m_Value: {x: -0.012058597, y: -0.68270874, z: 0.011261615, w: -0.73050433}
+    m_Value: {x: 0.022686854, y: 0.9680794, z: -0.09517675, w: 0.23075768}
   m_Size:
-    m_Target: 4.630888
+    m_Target: 1.534767
     speed: 2
-    m_Value: 4.431472
+    m_Value: 1.534767
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1150,7 +1150,7 @@ MonoBehaviour:
   m_UseMipMap: 0
   m_VSyncEnabled: 0
   m_Gizmos: 0
-  m_Stats: 1
+  m_Stats: 0
   m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   m_ZoomArea:
     m_HRangeLocked: 0
