@@ -16,9 +16,9 @@ public class Pistol : Weapon
     protected override void Shoot()
     {
         base.Shoot();
-        Projectile projectileInstance = Instantiate(bulletPrefab , bulletSpawn.position , bulletSpawn.rotation);
+        Projectile projectileInstance = Instantiate(bulletPrefab , bulletSpawn.position , bulletPrefab.transform.rotation);
         projectileInstance.Init(this);
-        projectileInstance.Launch();
+        projectileInstance.Launch(transform);
     }
 
     protected override void StopShooting(DeactivateEventArgs args)

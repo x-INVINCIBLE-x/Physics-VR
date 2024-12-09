@@ -8,6 +8,7 @@ public class Swing : MonoBehaviour
     public Transform startSwingPoint;
     public float maxDistance;
     public LayerMask swingLayer;
+    public float swingRadius;
 
     public Transform predictionPoint;
 
@@ -85,7 +86,8 @@ public class Swing : MonoBehaviour
 
         RaycastHit raycastHit;
 
-        hasHit = Physics.Raycast(startSwingPoint.position, startSwingPoint.forward, out raycastHit, maxDistance, swingLayer);
+        hasHit = Physics.SphereCast(startSwingPoint.position, swingRadius, startSwingPoint.forward, out raycastHit, maxDistance, swingLayer);
+        //hasHit = Physics.Raycast(startSwingPoint.position, startSwingPoint.forward, out raycastHit, maxDistance, swingLayer);
 
         if (hasHit)
         {
