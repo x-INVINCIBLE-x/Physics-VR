@@ -11,7 +11,7 @@ public class Morpher : MonoBehaviour
         {
             Debug.Log("Got component");
             if (item.isInventoryItem) return;
-
+            
             item.isInventoryItem = true;
             item.inventoryModel.SetActive(true);
             item.inGameModel.SetActive(false);

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4518617838075752985}
   - component: {fileID: 1703664298122710349}
   - component: {fileID: 2221047272145640076}
+  - component: {fileID: 4171253268604679599}
   m_Layer: 6
   m_Name: Morph Area
   m_TagString: Untagged
@@ -109,3 +110,15 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1100, y: 470, z: 400}
   m_Center: {x: 0, y: 0, z: -200}
+--- !u!114 &4171253268604679599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1694054247836418794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f07d11f3e0d8fca4f910ab70a2e14284, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
