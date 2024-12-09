@@ -11,7 +11,7 @@ public class Projectile : MonoBehaviour
         this.weapon = weapon;
     }
 
-    public virtual void Launch(Transform target)
+    public virtual void Launch(Transform _transform)
     {
 
     }

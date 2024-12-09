@@ -108,7 +108,7 @@ MeshCollider:
   m_Enabled: 1
   serializedVersion: 5
   m_Convex: 1
-  m_CookingOptions: 30
+  m_CookingOptions: -1
   m_Mesh: {fileID: 4300000, guid: 589c90d4952cd7f4f99d50582f9da48d, type: 3}
 --- !u!54 &2842459461635347164
 Rigidbody:
@@ -132,7 +132,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -301,11 +301,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 473b71e6b2aec164a9471f5923a4b50c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootingForce: 0
-  bulletSpawn: {fileID: 0}
-  recoilForce: 0
-  damage: 0
-  bulletPrefab: {fileID: 0}
+  shootingForce: 38
+  bulletSpawn: {fileID: 320501558217728086}
+  recoilForce: 4
+  damage: 20
+  bulletPrefab: {fileID: 984674399076749126, guid: daafb2a9396d58c48950b71b8d79d637, type: 3}
 --- !u!1 &6546887838664055894
 GameObject:
   m_ObjectHideFlags: 0

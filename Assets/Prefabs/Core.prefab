@@ -87,7 +87,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 122410769260993263, guid: cdce3ba138d728a4ea5dfd9326ee4f00, type: 3}
       propertyPath: speed
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 148737587033768936, guid: cdce3ba138d728a4ea5dfd9326ee4f00, type: 3}
       propertyPath: m_LocalPosition.x
@@ -332,14 +332,6 @@ PrefabInstance:
     - target: {fileID: 8331269411603773262, guid: cdce3ba138d728a4ea5dfd9326ee4f00, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -342.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8359197311046521477, guid: cdce3ba138d728a4ea5dfd9326ee4f00, type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 8587726114483385058, guid: cdce3ba138d728a4ea5dfd9326ee4f00, type: 3}
-      propertyPath: m_CameraYOffset
-      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8798085482035463735, guid: cdce3ba138d728a4ea5dfd9326ee4f00, type: 3}
       propertyPath: m_AnchorMax.y
