@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8609148408589953891}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Corners_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 2069073203059735634}
   - component: {fileID: 6284775630381344217}
   - component: {fileID: 1724165359989628097}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: defaultMaterial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1518674567914237198}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Rail_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,7 +156,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7233578705912283644}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Collada visual scene group
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -193,7 +193,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4282164750356975248}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Legs_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -225,7 +225,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6504964185475441749}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Table_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -259,7 +259,7 @@ GameObject:
   - component: {fileID: 6196870066130101822}
   - component: {fileID: 4169955534197016611}
   - component: {fileID: 2344353431877672319}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: defaultMaterial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -340,7 +340,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5977789715336621840}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Metal_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -374,7 +374,7 @@ GameObject:
   - component: {fileID: 2245667419288453803}
   - component: {fileID: 1373940520905082792}
   - component: {fileID: 2143789919988744859}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: defaultMaterial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -456,7 +456,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3573718906702076303}
   - component: {fileID: 6984879586051340755}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: wooden_table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -473,8 +473,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.5660461, y: -0.45782015, z: -0.4332078, w: 0.53134125}
   m_LocalPosition: {x: 566.85, y: 123.629, z: 896.94}
-  m_LocalScale: {x: 1.2, y: 1.4, z: 1.2}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1.6, y: 1.8666666, z: 1.6}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7233578705912283644}
   m_Father: {fileID: 0}
@@ -511,7 +511,7 @@ GameObject:
   - component: {fileID: 6214090946935959518}
   - component: {fileID: 5018061689468353885}
   - component: {fileID: 4348899019668407447}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: defaultMaterial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -592,7 +592,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4306607497679143818}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: Base_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -626,7 +626,7 @@ GameObject:
   - component: {fileID: 3030167394986038383}
   - component: {fileID: 5383605521237208465}
   - component: {fileID: 8135944548343505515}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: defaultMaterial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -710,7 +710,7 @@ GameObject:
   - component: {fileID: 2919564367248349221}
   - component: {fileID: 3203703108111027237}
   - component: {fileID: 3125846487827183996}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: defaultMaterial
   m_TagString: Untagged
   m_Icon: {fileID: 0}
