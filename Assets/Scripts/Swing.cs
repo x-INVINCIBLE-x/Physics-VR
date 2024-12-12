@@ -15,6 +15,7 @@ public class Swing : MonoBehaviour
     public InputActionProperty pullAction;
 
     public float pullingStrngth = 500f;
+    public float swingRadius = 2f;
 
     public Rigidbody playerRb;
     public LineRenderer lineRenderer;
@@ -85,7 +86,8 @@ public class Swing : MonoBehaviour
 
         RaycastHit raycastHit;
 
-        hasHit = Physics.Raycast(startSwingPoint.position, startSwingPoint.forward, out raycastHit, maxDistance, swingLayer);
+        //hasHit = Physics.Raycast(startSwingPoint.position, startSwingPoint.forward, out raycastHit, maxDistance, swingLayer);
+        hasHit = Physics.SphereCast(startSwingPoint.position, swingRadius, startSwingPoint.forward, out raycastHit, maxDistance, swingLayer);
 
         if (hasHit)
         {
