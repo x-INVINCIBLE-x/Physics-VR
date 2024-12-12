@@ -16,7 +16,6 @@ public class Swing : MonoBehaviour
     public InputActionProperty pullAction;
 
     public float pullingStrngth = 500f;
-    public float swingRadius = 2f;
 
     public Rigidbody playerRb;
     public LineRenderer lineRenderer;

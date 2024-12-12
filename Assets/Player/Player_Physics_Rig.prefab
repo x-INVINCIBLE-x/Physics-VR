@@ -352,6 +352,7 @@ MonoBehaviour:
   swingLayer:
     serializedVersion: 2
     m_Bits: 256
+  swingRadius: 0
   predictionPoint: {fileID: 8913394148946177721}
   swingAction:
     m_UseReference: 1
@@ -3778,7 +3779,7 @@ MonoBehaviour:
   m_ImproveAccuracyWithSphereCollider: 1
   m_PhysicsLayerMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 1025
   m_PhysicsTriggerInteraction: 1
 --- !u!135 &2048045790003057148
 SphereCollider:
@@ -5100,6 +5101,7 @@ MonoBehaviour:
   swingLayer:
     serializedVersion: 2
     m_Bits: 256
+  swingRadius: 0
   predictionPoint: {fileID: 7149691484606963073}
   swingAction:
     m_UseReference: 1
@@ -6963,7 +6965,7 @@ MonoBehaviour:
   m_ImproveAccuracyWithSphereCollider: 1
   m_PhysicsLayerMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 1025
   m_PhysicsTriggerInteraction: 1
 --- !u!135 &3691002124295915040
 SphereCollider:
