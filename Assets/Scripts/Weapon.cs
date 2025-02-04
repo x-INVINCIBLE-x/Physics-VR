@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
 [RequireComponent(typeof(Rigidbody))]
-[RequireComponent(typeof(XRGrabInteractable))]
+[RequireComponent(typeof(UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable))]
 public class Weapon : MonoBehaviour
 {
     [SerializeField] protected float shootingForce;
@@ -14,11 +14,11 @@ public class Weapon : MonoBehaviour
     [SerializeField] protected float damage;
 
     private Rigidbody rigidBody;
-    private XRGrabInteractable interactableWeapon;
+    private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable interactableWeapon;
 
     protected virtual void Awake()
     {
-        interactableWeapon = GetComponent<XRGrabInteractable>();
+        interactableWeapon = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
         rigidBody = GetComponent<Rigidbody>();
         SetupInteractableWeaponEvents();
     }

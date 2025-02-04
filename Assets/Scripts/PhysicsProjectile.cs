@@ -24,6 +24,6 @@ public class PhysicsProjectile : Projectile
     public override void Launch(Transform _transform)
     {
         base.Launch(_transform);
-        rigidBody.velocity = _transform.forward * weapon.GetShootingForce();
+        rigidBody.linearVelocity = _transform.forward * weapon.GetShootingForce();
     }
 }
