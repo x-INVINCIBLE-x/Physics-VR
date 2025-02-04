@@ -86,8 +86,8 @@ public class ContinousMovementPhysics : MonoBehaviour
         {
             bool currentJumpInput = jumpInputSource.action.IsPressed();
 
-            float handSpeed = ((physicsRig.leftHandJointRB.velocity - rb.velocity).magnitude
-                                + (physicsRig.rightHandJointRB.velocity - rb.velocity).magnitude) / 2;
+            float handSpeed = ((physicsRig.leftHandJointRB.linearVelocity - rb.linearVelocity).magnitude
+                                + (physicsRig.rightHandJointRB.linearVelocity - rb.linearVelocity).magnitude) / 2;
 
             if (currentJumpInput) Debug.Log("HandSpeed" + handSpeed); // For Debugging Only
 
@@ -96,7 +96,7 @@ public class ContinousMovementPhysics : MonoBehaviour
                 Debug.Log("enter");
                 //rb.velocity = Vector3.up * //Mathf.Clamp(handSpeed, minHandSpeedForJump, maxHandSpeedForJump);
                 jumpVelocity = Mathf.Sqrt(1 * -Physics.gravity.y * jumpHeight);
-                rb.velocity = Vector3.up * jumpVelocity;
+                rb.linearVelocity = Vector3.up * jumpVelocity;
             }
         }
         else
@@ -104,7 +104,7 @@ public class ContinousMovementPhysics : MonoBehaviour
             if (isGrounded && jump)
             {
                 jumpVelocity = Mathf.Sqrt(1 * -Physics.gravity.y * jumpHeight);
-                rb.velocity = Vector3.up * jumpVelocity;
+                rb.linearVelocity = Vector3.up * jumpVelocity;
             }
         }
     }
